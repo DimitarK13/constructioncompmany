@@ -1,0 +1,347 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:focus {
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.padding {
+    padding: 0 0 1.5em 1.5em;
+}
+
+#landing-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    align-items: center;
+}
+
+.menu-toggler .line {
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: .5em;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
+    padding: 1.5em 5em 1.5em 3em;
+    background-color: #111;
+    display: none;
+}
+
+nav ul li {
+    color: #fff;
+}
+
+nav ul li:hover {
+    color: #ffac00;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero p {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero .btn {
+    display: inline-block;
+    width: max-content;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 1em 1.5em;
+    margin-top: 4em;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 250ms ease-out;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+#about {
+    padding: 1.5em;
+}
+
+#about h1 {
+    color: #ffac00;
+}
+
+#about p {
+    max-width: 55ch;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+#sectors {
+    padding: 1.5em;
+    background-color: #ffac00;
+    color: #fff;
+}
+
+.flex-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.flex-area > div {
+    width: 350px;
+    height: 250px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / .5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+
+.flex-area > div p {
+    color: #111;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .75em;
+}
+
+.flex-area > div::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.flex-area > div:nth-of-type(1) {
+    background-image: url(../images/school.jpg);
+}
+
+.flex-area > div:nth-of-type(2) {
+    background-image: url(../images/hospital.jpg);
+}
+
+.flex-area > div:nth-of-type(3) {
+    background-image: url(../images/park.jpg);
+}
+
+.flex-area > div:nth-of-type(4) {
+    background-image: url(../images/commercial.jpg);
+}
+
+.flex-area > div:nth-of-type(5) {
+    background-image: url(../images/urban-living.jpg);
+}
+
+.flex-area > div:nth-of-type(6) {
+    background-image: url(../images/investment-building.jpg);
+}
+
+.flex-area > div:nth-of-type(7) {
+    background-image: url(../images/house.jpg);
+}
+
+.flex-area > div:nth-of-type(8) {
+    background-image: url(../images/utilities.jpg);
+}
+
+.flex-area > div:nth-of-type(9) {
+    background-image: url(../images/highways.jpg);
+}
+
+.flex-area > div:nth-of-type(10) {
+    background-image: url(../images/rails.jpg);
+}
+
+#projects {
+    padding: 1.5em;
+    background-color: #111;
+    color: #fff;
+}
+
+#projects p {
+    margin-top: 2em;
+}
+
+#projects a {
+    color: #ffac00;
+}
+
+#contact {
+    padding: 1.5em;
+}
+
+#contact h1 {
+    color: #ffac00;
+}
+
+#contact h2 {
+    margin-bottom: .5em;
+    color: #111;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 0;
+    border-bottom: 1px solid #111;
+    margin-bottom: 2.5em;
+    font-size: 1.1rem;
+}
+
+.input-textarea {
+    border: 1px solid #111;
+    padding: 1em;
+    font-size: 1.1rem;
+}
+
+label {
+    margin-bottom: .5em;
+    font-size: 1.1rem;
+}
+
+form .btn {
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 4em;
+    padding: 1em 1.5em;
+    border: 1px solid #111;
+    font-size: 1.1rem;
+    width: max-content;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+#copyright {
+    background-color: #111;
+    padding: 1.5em;
+    color: #fff;
+}
+
+#copyright a {
+    color: #90f;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    nav{
+        padding: 0 0 0 3em;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 5em;
+    }
+
+    .menu-toggler {
+        display: none;
+    }
+
+    .hero {
+        padding: 3em;
+    }
+
+    #about {
+        padding: 3em;
+    }
+
+    #sectors {
+        padding: 3em;
+    }
+
+    #projects {
+        padding: 3em;
+    }
+
+    #projects img {
+        width: 30%;
+    }
+
+    #contact {
+        padding: 3em;
+    }
+
+    #copyright {
+        padding: 1.5em 3em;
+    }
+}
